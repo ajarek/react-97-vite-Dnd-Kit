@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  -black: #000000;
+  --blue: #0062b2;
+  --blueViolet: #8a2be2;
+  --blueViolet-light: #dabdf7;
+  --braun: #713d45;
+  --braun-dark: #230901;
+  --green: #2b8c69;
+  --green-light: #1db954;
+  --grey: #2b343b;
+  --grey-dark: #192127;
+  --grey-light: #7b7b7b;
+  --grey-light-super: #ddd;
+  --orange: #ff9f1a;
+  --red: #ff0000;
+  --red-light: #f56161;
+  --tomato: #ff6347;
+  --white: #fff;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+#root {
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user {
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 18px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--blueViolet-light);
+}
+
+.users-form {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+.users-form input {
+  width: calc(400px - 60px);
+  height: 40px;
+  font-size: 18px;
+  border: 1px solid black;
+  padding: 0 10px;
+  outline: none;
+  border-right: none;
+}
+.users-form button {
+  height: 40px;
+  width: 60px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.btn-delete {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.btn-delete:hover {
+  font-size: 24px;
+}
